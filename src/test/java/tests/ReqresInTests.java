@@ -121,7 +121,7 @@ public class ReqresInTests extends TestBase {
     public void unsuccessfulLoginTest() {
         step("Проверка входа без пароля", () -> {
             LoginRequestModel requestLogin = new LoginRequestModel();
-            requestLogin.setEmail("qa@guru");
+            requestLogin.setEmail("qa@qa");
 
             ErrorResponseModel errorResponse =
                     step("Отправка POST-запроса на вход без пароля", () ->
